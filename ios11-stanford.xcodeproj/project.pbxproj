@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0255995A20ED19C800760841 /* Concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255995920ED19C800760841 /* Concentration.swift */; };
+		0255995C20ED1A7F00760841 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255995B20ED1A7F00760841 /* Card.swift */; };
 		02881DC220E7EA42007E4FC8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02881DC120E7EA42007E4FC8 /* AppDelegate.swift */; };
 		02881DC420E7EA42007E4FC8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02881DC320E7EA42007E4FC8 /* ViewController.swift */; };
 		02881DC720E7EA42007E4FC8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02881DC520E7EA42007E4FC8 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0255995920ED19C800760841 /* Concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Concentration.swift; sourceTree = "<group>"; };
+		0255995B20ED1A7F00760841 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		02881DBE20E7EA42007E4FC8 /* ios11-stanford.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios11-stanford.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02881DC120E7EA42007E4FC8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02881DC320E7EA42007E4FC8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +64,8 @@
 				02881DC820E7EA43007E4FC8 /* Assets.xcassets */,
 				02881DCA20E7EA43007E4FC8 /* LaunchScreen.storyboard */,
 				02881DCD20E7EA43007E4FC8 /* Info.plist */,
+				0255995920ED19C800760841 /* Concentration.swift */,
+				0255995B20ED1A7F00760841 /* Card.swift */,
 			);
 			path = "ios11-stanford";
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				02881DC420E7EA42007E4FC8 /* ViewController.swift in Sources */,
 				02881DC220E7EA42007E4FC8 /* AppDelegate.swift in Sources */,
+				0255995A20ED19C800760841 /* Concentration.swift in Sources */,
+				0255995C20ED1A7F00760841 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
