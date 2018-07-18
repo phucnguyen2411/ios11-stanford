@@ -39,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		025A06C420FF8A5100A23FAC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				02881DC320E7EA42007E4FC8 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		025A06C520FF8A6000A23FAC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0255995920ED19C800760841 /* Concentration.swift */,
+				0255995B20ED1A7F00760841 /* Card.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		02881DB520E7EA42007E4FC8 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +75,13 @@
 		02881DC020E7EA42007E4FC8 /* ios11-stanford */ = {
 			isa = PBXGroup;
 			children = (
+				025A06C520FF8A6000A23FAC /* Models */,
+				025A06C420FF8A5100A23FAC /* Controllers */,
 				02881DC120E7EA42007E4FC8 /* AppDelegate.swift */,
-				02881DC320E7EA42007E4FC8 /* ViewController.swift */,
 				02881DC520E7EA42007E4FC8 /* Main.storyboard */,
 				02881DC820E7EA43007E4FC8 /* Assets.xcassets */,
 				02881DCA20E7EA43007E4FC8 /* LaunchScreen.storyboard */,
 				02881DCD20E7EA43007E4FC8 /* Info.plist */,
-				0255995920ED19C800760841 /* Concentration.swift */,
-				0255995B20ED1A7F00760841 /* Card.swift */,
 			);
 			path = "ios11-stanford";
 			sourceTree = "<group>";
