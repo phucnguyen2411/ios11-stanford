@@ -11,21 +11,25 @@ import UIKit
 class ViewController: UIViewController {
     
     //lazy comment for no need initiziled
-    lazy var game = Concentration(numberOdPairCard: (cardButtons.count + 1) / 2)
+    private lazy var game = Concentration(numberOdPairCard: numberOdPairsOfCards)
+    
+    var numberOdPairsOfCards: Int {
+        return (cardButtons.count + 1) / 2
+    }
    
-    var flipCount = 0 {
+    private(set) var flipCount = 0 {
         didSet{
             flipCountLabel.text = "Flip: \(flipCount)"
         }
     }// no need choose type for this, becasue 0 clearly Int
     
     
-    @IBOutlet weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var flipCountLabel: UILabel!
     
-    @IBOutlet var cardButtons: [UIButton]!
+    @IBOutlet private var cardButtons: [UIButton]!
     
     
-    @IBAction func touchCard(_ sender: UIButton){
+    @IBAction private func touchCard(_ sender: UIButton){
         flipCount += 1
         if let cardNumber = cardButtons.index(of: sender) {
 //            flipCard(withEmoj: emojChooses[cardNumber], on: sender) part1
@@ -39,7 +43,7 @@ class ViewController: UIViewController {
         
     }
     
-    func updateViewFromModel(){
+    private func updateViewFromModel(){
         for index in cardButtons.indices{ // method count
             let button = cardButtons[index]
             let card = game.cards[index]
@@ -54,11 +58,11 @@ class ViewController: UIViewController {
         }
     }
     
-    var emojChooses: Array<String> = ["1", "2", "3", "4", "5", "6"] // No need choose exactly type of variable
+    private var emojChooses: Array<String> = ["1", "2", "3", "4", "5", "6"] // No need choose exactly type of variable
     
-    var emoj = Dictionary<Int, String>() // other ways u can use [Int:String]()
+    private var emoj = Dictionary<Int, String>() // other ways u can use [Int:String]()
     
-    func emoj(for card: Card) -> String{
+    private func emoj(for card: Card) -> String{
         //put emoj to Dic
         if emoj[card.identifier] == nil, emojChooses.count > 0 { // put 2 match in 1 line
                 //create radom index
@@ -71,7 +75,7 @@ class ViewController: UIViewController {
     //        } else {
     //            return "test";
     //        }
-        return emoj[card.identifier] ?? ""
+        return emoj[card.identifier] ?? "?"
     }
 
     //    func flipCard(withEmoj emoj: String, on button: UIButton){
